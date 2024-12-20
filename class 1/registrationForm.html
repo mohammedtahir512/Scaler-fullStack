@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <!-- registration  form has
+        name, email, ph no, experience, query,
+        graduation,grad year,  password, gender, 
+        national photo,profile photo, submit
+        -->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter Your Full Name" id="name" name="username"/>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter Email" id="email" name="email"/>
+        </div>
+
+        <div>
+            <label for="num">Contact</label>
+            <input type="number" placeholder="Enter Your Mobile Number" id="num" name="contact"/>
+        </div>
+
+        <div>
+            <label>Degree</label>
+            <select name="degree">
+                <option value="id1">--</option>
+                <option value="id2">BA</option>
+                <option value="id3">BCOM</option>
+                <option value="id4">BBA</option>
+                <option value="id5">-BTech</option>
+                <option value="id6">BCA</option>
+                <option value="id7">BSC</option>
+                <option value="id8">Others</option>
+            </select>
+        </div>
+
+
+        <div>   
+            <label>DOB</label>
+            <input type="date" name="dob"/>
+        </div>
+
+        <div>
+            <span>Gender</span>
+            <div>
+                <label>Male</label>
+                <input type="radio" name="gender" value="M"/>
+                <label>Female</label >
+                <input type="radio" name="gender" value="F"/>
+                <label>Others</label>
+                <input type="radio" name="gender" value="O" val/>
+            </div>
+        </div>
+
+        <div>
+            <span> Course Slot</span>
+            <div>
+                <label>Morning</label>
+                <input type="checkbox" value="m" name="slot"/>
+                <label>Evening</label>
+                <input type="checkbox" value="e" name="slot"/>
+            </div>
+            
+        </div>
+
+        <div>
+            <label>Profile Picture</label>
+            <input type="file" accept=".jpeg,.png,.jpg" name="photo"/>    
+        </div>
+
+        <div>
+            <label>Introduction</label>
+            <textarea name="intro"></textarea>
+        </div>
+
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- 
+url of submitted form
+http://127.0.0.1:3000/registrationForm.html?
+username=Mohammed+TAhir&
+email=kjnjkn%40jhbh.com&
+contact=56548464654&
+degree=id3&
+dob=2024-12-19&
+gender=M&
+slot=m&
+slot=e&
+photo=&
+intro=kkjdnkj -->
